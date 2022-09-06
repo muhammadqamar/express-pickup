@@ -1,0 +1,49 @@
+.puckup__fastestOnlineOrder {
+  max-width: 1440px;
+  margin: 230px auto 88px;
+  padding: 0 36px;
+
+  @media (max-width: 768px) {
+    margin: 56px auto;
+    padding: 0 24px;
+  }
+  @media (min-width: 768px) and (max-width: 1299px) {
+    padding: 0 50px;
+  }
+
+  .fastestOnlineOrder_section {
+    width: 100%;
+    min-height: 520px;
+    padding: 53px 81px 53px 113px;
+
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 152.36px;
+
+    background-image: url("../images/pickup/fastestOnlineOrder-bg-desktop-img.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    .ready_img {
+      width: auto;
+      height: auto;
+    }
+
+    .fastestOnlineOrder_contant {
+      // margin-left: -70px;
+      @media (max-width: 999px) {
+        margin-left: 0;
+      }
+
+      .contant_about {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        color: var(--white);
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

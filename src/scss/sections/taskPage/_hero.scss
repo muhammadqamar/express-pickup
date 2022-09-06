@@ -1,0 +1,58 @@
+.pickup__hero {
+  max-width: 1440px;
+  margin: 0 auto 92px;
+
+  .pickup__hero-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--black);
+    padding-left: 16px;
+    border-left: 5px solid var(--red-400);
+    margin: 57px 0 7.75px 32px;
+  }
+  .inner_container {
+    padding: 0 62px;
+
+    .pickup_bg_image_box {
+      width: 100%;
+      height: 774px;
+      background-image: url("../images/pickup/hero-bg-image.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      position: relative;
+
+      .hero_exp_pickup_img {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 20px;
+        left: 151px;
+      }
+      .hero_user_img {
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        position: absolute;
+        left: 134px;
+        bottom: 0;
+      }
+      .hero_public_shop {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50.25px;
+        right: 220.35px;
+      }
+      .hero_online_Tag_img {
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 42.35px;
+        bottom: 44.41px;
+      }
+    }
+  }
+}
