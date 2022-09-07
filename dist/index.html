@@ -65,7 +65,7 @@ input, button, textarea, select {
   --brand-100: #fb4b1e;
   --green: #00b362;
   --green-400: #008d72;
-  --red-400: #df0000;
+  --red-400: #f05a22;
   --main-background: #f5f5f5;
   --section-padding: 3rem;
 }
@@ -462,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 119px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1399px) {
   .pickup__online_order .main_arrow_img {
     left: 0;
   }
@@ -497,7 +497,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: var(--black);
   margin: 0 auto;
-  margin-bottom: 105px;
+  margin-bottom: 103.99px;
   font-size: 40px;
   font-weight: 700;
   line-height: 56px;
@@ -583,8 +583,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pickup__online_order .flex_box .box_about .number {
+  color: #000;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  letter-spacing: -.01em;
   margin-bottom: 32px;
-  font-family: Open Sans;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -592,8 +596,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .pickup__online_order .flex_box .box_about .number {
-    font-size: 64px;
-    line-height: 72px;
+    margin-bottom: 16px;
+    font-size: 44px;
+    line-height: 52px;
   }
 }
 
@@ -1318,7 +1323,7 @@ h1, h2, h3, h4, h5, h6 {
   <div class="flex_box">
     <img src="/store-img.e7a5cfa4.png" alt="img" class="box_main_img">
     <div class="box_about box_1">
-      <div class="number">01.</div>
+      <p class="number">01.</p>
       <p class="box_title">Επίλεξε κατάστημα</p>
       <p class="box_about">
         Βρες <strong> online </strong> το αγαπημένο σου προϊόν ανάμεσα σε αμέτρητες επιλογές, δες τη
@@ -1338,7 +1343,8 @@ h1, h2, h3, h4, h5, h6 {
       </p>
       <p class="box_about">
         Ολοκλήρωσε την αγορά σου συμπληρώνοντας τα στοιχεία σου και παράλαβε το προϊόν που θέλεις
-        από το κατάστημα της επιλογής σου, <strong>πιο γρήγορα από ποτέ!</strong>
+        από το κατάστημα της επιλογής σου,
+        <strong>πιο γρήγορα από ποτέ!</strong>
       </p>
     </div>
     <img src="/delivery-img.fc4d4f55.png" alt="img" class="box_main_img_desktop">
