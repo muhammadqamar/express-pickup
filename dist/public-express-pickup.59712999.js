@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"lX4BT":[function(require,module,exports) {
+})({"ciqVK":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
@@ -533,6 +533,6 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"4M6V8":[function(require,module,exports) {
 
-},{}]},["lX4BT","4M6V8"], "4M6V8", "parcelRequirefce9")
+},{}]},["ciqVK","4M6V8"], "4M6V8", "parcelRequirefce9")
 
-//# sourceMappingURL=Express-Pickup.59712999.js.map
+//# sourceMappingURL=public-express-pickup.59712999.js.map

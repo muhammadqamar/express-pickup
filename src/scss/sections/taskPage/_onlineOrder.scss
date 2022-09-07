@@ -12,7 +12,6 @@
     left: 119px;
     object-fit: contain;
   }
-
   .online_order_heading {
     width: 800px;
     margin: 0 auto;
@@ -21,7 +20,7 @@
     line-height: 56px;
     text-align: center;
     color: var(--black);
-    margin-bottom: 105px;
+    margin-bottom: 103.99px;
 
     @media (max-width: 768px) {
       font-size: 20px;
@@ -49,7 +48,11 @@
 
     .box_about {
       .number {
-        font-family: "Open Sans";
+        color: #000;
+        -webkit-text-fill-color: #000;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #000;
+        letter-spacing: -0.01em;
         font-weight: 700;
         font-size: 64px;
         line-height: 56px;
