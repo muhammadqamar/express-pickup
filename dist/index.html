@@ -256,10 +256,29 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .pickup__hero .pickup__hero-title {
+    display: none;
+  }
 }
 
 .pickup__hero .inner_container {
   padding: 0 62px;
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .pickup__hero .inner_container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pickup__hero .inner_container {
+    padding: 0;
+  }
 }
 
 .pickup__hero .inner_container .pickup_bg_image_box {
@@ -272,12 +291,48 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+@media (max-width: 992px) {
+  .pickup__hero .inner_container .pickup_bg_image_box {
+    width: 100%;
+    height: 774px;
+    background-image: url("hero-mobile-img.27e0b929.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+}
+
 .pickup__hero .inner_container .pickup_bg_image_box .hero_exp_pickup_img {
   width: auto;
   height: auto;
   position: absolute;
   top: 20px;
   left: 151px;
+}
+
+@media (min-width: 1099px) and (max-width: 1399px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_exp_pickup_img {
+    width: 390px;
+    top: 90px;
+    left: 84px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_exp_pickup_img {
+    width: 300px;
+    top: 120px;
+    left: 84px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_exp_pickup_img {
+    width: 215.2px;
+    top: 9.45px;
+    left: 84px;
+  }
 }
 
 .pickup__hero .inner_container .pickup_bg_image_box .hero_user_img {
@@ -289,12 +344,57 @@ h1, h2, h3, h4, h5, h6 {
   left: 134px;
 }
 
+@media (min-width: 1099px) and (max-width: 1399px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_user_img {
+    left: 52px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_user_img {
+    height: 430px;
+    bottom: 70px;
+    left: 52px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_user_img {
+    height: 491.03px;
+    bottom: 171px;
+    left: -29px;
+  }
+}
+
 .pickup__hero .inner_container .pickup_bg_image_box .hero_public_shop {
   width: auto;
   height: auto;
   position: absolute;
   top: 50.25px;
   right: 220.35px;
+}
+
+@media (min-width: 1099px) and (max-width: 1399px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_public_shop {
+    height: 285px;
+    top: 95px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_public_shop {
+    height: 255px;
+    top: 135px;
+    right: 190px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_public_shop {
+    height: 249.03px;
+    top: 202px;
+    right: -34px;
+  }
 }
 
 .pickup__hero .inner_container .pickup_bg_image_box .hero_online_Tag_img {
@@ -305,6 +405,28 @@ h1, h2, h3, h4, h5, h6 {
   right: 42.35px;
 }
 
+@media (min-width: 1099px) and (max-width: 1399px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_online_Tag_img {
+    width: 260px;
+    bottom: 85px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_online_Tag_img {
+    width: 230px;
+    bottom: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pickup__hero .inner_container .pickup_bg_image_box .hero_online_Tag_img {
+    width: auto;
+    height: auto;
+    bottom: 0;
+  }
+}
+
 .pickup__online_order {
   max-width: 1440px;
   margin: 0 auto;
@@ -312,13 +434,62 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+@media (min-width: 768px) and (max-width: 1299px) {
+  .pickup__online_order {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pickup__online_order {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pickup__online_order {
+    overflow: hidden;
+  }
+}
+
 .pickup__online_order .main_arrow_img {
   width: auto;
   height: auto;
   object-fit: contain;
+  display: block;
   position: absolute;
   top: 120px;
   left: 119px;
+}
+
+@media (min-width: 992px) {
+  .pickup__online_order .main_arrow_img {
+    left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .pickup__online_order .main_arrow_img {
+    display: none;
+  }
+}
+
+.pickup__online_order .main_arrow_img-mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .pickup__online_order .main_arrow_img-mobile {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
 }
 
 .pickup__online_order .online_order_heading {
@@ -339,16 +510,62 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 992px) {
+  .pickup__online_order .online_order_heading {
+    width: 100%;
+  }
+}
+
 .pickup__online_order .flex_box {
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 76px;
   display: flex;
 }
 
+@media (max-width: 992px) {
+  .pickup__online_order .flex_box {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
 .pickup__online_order .flex_box .box_main_img {
   width: 476px;
   height: 476px;
+}
+
+@media (max-width: 992px) {
+  .pickup__online_order .flex_box .box_main_img {
+    width: auto;
+    height: auto;
+  }
+}
+
+.pickup__online_order .flex_box .box_main_img_desktop {
+  width: 476px;
+  height: 476px;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .pickup__online_order .flex_box .box_main_img_desktop {
+    display: none;
+  }
+}
+
+.pickup__online_order .flex_box .box_main_img_mobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .pickup__online_order .flex_box .box_main_img_mobile {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    display: block;
+  }
 }
 
 .pickup__online_order .flex_box .box_about.box_2 {
@@ -357,6 +574,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .pickup__online_order .flex_box .box_about.box_1 {
   max-width: 582px;
+}
+
+@media (max-width: 992px) {
+  .pickup__online_order .flex_box .box_about {
+    text-align: center;
+  }
 }
 
 .pickup__online_order .flex_box .box_about .number {
@@ -375,7 +598,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pickup__online_order .flex_box .box_about .box_title {
-  width: 383px;
   margin-bottom: 16px;
   font-size: 32px;
   font-weight: 700;
@@ -413,31 +635,51 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 36px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .puckup__fastestOnlineOrder {
-    margin: 56px auto;
-    padding: 0 24px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1299px) {
-  .puckup__fastestOnlineOrder {
-    padding: 0 50px;
+    margin: 19px auto 88px;
+    padding: 0;
   }
 }
 
 .puckup__fastestOnlineOrder .fastestOnlineOrder_section {
   width: 100%;
   min-height: 520px;
-  background-image: url("fastestOnlineOrder-bg-desktop-img.d684904b.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 40px;
+  background-color: #66ccd1;
+  border-radius: 200px;
   align-items: center;
   gap: 152.36px;
   padding: 53px 81px 53px 113px;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .puckup__fastestOnlineOrder .fastestOnlineOrder_section {
+    width: 100%;
+    min-height: 539.58px;
+    background-image: url("online-order-bg-mobile-img.8e77d918.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: inherit;
+    border-radius: 0;
+    padding: 68px 16px 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .puckup__fastestOnlineOrder .fastestOnlineOrder_section {
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .puckup__fastestOnlineOrder .fastestOnlineOrder_section {
+    gap: 50px;
+    padding: 53px 50px;
+  }
 }
 
 .puckup__fastestOnlineOrder .fastestOnlineOrder_section .ready_img {
@@ -457,6 +699,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
+}
+
+@media (max-width: 768px) {
+  .puckup__fastestOnlineOrder .fastestOnlineOrder_section .fastestOnlineOrder_contant .contant_about {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .task__smartphone {
@@ -1062,6 +1312,7 @@ h1, h2, h3, h4, h5, h6 {
 
     <section class="pickup__online_order">
   <img src="/map-arrow.20d248c6.png" alt="bg-shape" class="main_arrow_img">
+  <img src="/mobile-map-arrow.62cded8c.png" alt="bg-shape" class="main_arrow_img-mobile">
   <h3 class="online_order_heading">Παραλαβή online παραγγελίας σε 30’ με 2 απλά βήματα!</h3>
 
   <div class="flex_box">
@@ -1077,15 +1328,20 @@ h1, h2, h3, h4, h5, h6 {
     </div>
   </div>
   <div class="flex_box">
+    <img src="/delivery-img.fc4d4f55.png" alt="img" class="box_main_img_mobile">
+
     <div class="box_about box_2">
       <div class="number">02.</div>
-      <p class="box_title">Ετοιμάσου για την πιο γρήγορη παραλαβή!</p>
+      <p class="box_title">
+        Ετοιμάσου για την πιο <br>
+        γρήγορη παραλαβή!
+      </p>
       <p class="box_about">
         Ολοκλήρωσε την αγορά σου συμπληρώνοντας τα στοιχεία σου και παράλαβε το προϊόν που θέλεις
         από το κατάστημα της επιλογής σου, <strong>πιο γρήγορα από ποτέ!</strong>
       </p>
     </div>
-    <img src="/delivery-img.fc4d4f55.png" alt="img" class="box_main_img">
+    <img src="/delivery-img.fc4d4f55.png" alt="img" class="box_main_img_desktop">
   </div>
 </section>
 
