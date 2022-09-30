@@ -1,6 +1,12 @@
 .pickup__hero {
   max-width: 1440px;
-  margin: 0 auto 92px;
+  margin: 57px auto 64px;
+  padding: 0 32px;
+
+  @media (max-width: 999px) {
+    margin: 0 auto 48px;
+    padding: 0;
+  }
 
   .pickup__hero-title {
     font-style: normal;
@@ -10,132 +16,238 @@
     color: var(--black);
     padding-left: 16px;
     border-left: 5px solid var(--red-400);
-    margin: 57px 0 7.75px 32px;
+    margin: 0 0 16px;
     display: block;
 
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }
-  .inner_container {
-    padding: 0 62px;
 
-    @media (min-width: 992px) and (max-width: 1399px) {
-      padding: 0 32px;
-    }
-    @media (max-width: 992px) {
-      padding: 0;
+  .pickup_bg_image_box {
+    width: 100%;
+    height: 774px;
+    background: #95e1e6;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 999px) {
+      height: 868px;
+      border-radius: 0;
     }
 
-    .pickup_bg_image_box {
-      width: 100%;
-      height: 774px;
-      background-image: url("../images/pickup/hero-bg-image.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      position: relative;
+    .hero_exp_pickup_img {
+      width: 286.48px;
+      height: auto;
+      position: absolute;
+      top: 20px;
+      left: 33px;
 
       @media (max-width: 992px) {
-        width: 100%;
-        height: 774px;
-        background-image: url("../images/pickup/hero-mobile-img.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        overflow: hidden;
-      }
-
-      .hero_exp_pickup_img {
-        width: auto;
-        height: auto;
-        position: absolute;
+        width: 215.2px;
         top: 20px;
-        left: 151px;
-
-        @media (min-width: 1099px) and (max-width: 1399px) {
-          width: 390px;
-          top: 90px;
-          left: 84px;
-        }
-        @media (min-width: 992px) and (max-width: 1099px) {
-          width: 300px;
-          top: 120px;
-          left: 84px;
-        }
-        @media (max-width: 992px) {
-          width: 215.2px;
-          top: 9.45px;
-          left: 84px;
-        }
+        left: 84px;
       }
-      .hero_user_img {
-        width: auto;
-        height: auto;
-        object-fit: contain;
-        position: absolute;
-        left: 134px;
-        bottom: 0;
+    }
+    .hero_user_img {
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      position: absolute;
+      left: 300px;
+      bottom: 0;
+      z-index: 1;
 
-        @media (min-width: 1099px) and (max-width: 1399px) {
-          left: 52px;
-        }
-        @media (min-width: 992px) and (max-width: 1099px) {
-          height: 430px;
-          left: 52px;
-          bottom: 70px;
-        }
-
-        @media (max-width: 992px) {
-          height: 491.03px;
-          left: -29px;
-          bottom: 171px;
-        }
+      @media (min-width: 1299px) and (max-width: 1399px) {
+        left: 209px;
       }
-      .hero_public_shop {
-        width: auto;
-        height: auto;
-        position: absolute;
-        top: 50.25px;
-        right: 220.35px;
-
-        @media (min-width: 1099px) and (max-width: 1399px) {
-          height: 285px;
-          top: 95px;
-        }
-
-        @media (min-width: 992px) and (max-width: 1099px) {
-          height: 255px;
-          top: 135px;
-          right: 190px;
-        }
-        @media (max-width: 992px) {
-          height: 249.03px;
-          top: 202px;
-          right: -34px;
-        }
+      @media (min-width: 1199px) and (max-width: 1299px) {
+        width: 380px;
+        left: 160px;
       }
-      .hero_online_Tag_img {
-        width: auto;
-        height: auto;
-        position: absolute;
-        right: 42.35px;
-        bottom: 44.41px;
+      @media (min-width: 1099px) and (max-width: 1199px) {
+        width: 380px;
+        left: 52px;
+      }
+      @media (min-width: 999px) and (max-width: 1099px) {
+        width: 406px;
+        left: 52px;
+      }
 
-        @media (min-width: 1099px) and (max-width: 1399px) {
-          width: 260px;
-          bottom: 85px;
-        }
-        @media (min-width: 992px) and (max-width: 1099px) {
-          width: 230px;
-          bottom: 150px;
-        }
+      @media (max-width: 999px) {
+        display: none;
+      }
+    }
 
-        @media (max-width: 992px) {
-          width: auto;
-          height: auto;
-          bottom: 0;
-        }
+    .user-mob-img {
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+
+      @media (min-width: 999px) {
+        display: none;
+      }
+    }
+
+    .hero_user_red-shap {
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @media (min-width: 1299px) and (max-width: 1399px) {
+        left: -103px;
+      }
+
+      @media (min-width: 1199px) and (max-width: 1299px) {
+        left: -192px;
+      }
+      @media (min-width: 999px) and (max-width: 1199px) {
+        left: -310px;
+      }
+      @media (max-width: 999px) {
+        display: none;
+      }
+    }
+    .user-bg-mob {
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      @media (min-width: 999px) {
+        display: none;
+      }
+    }
+
+    .hero_public_order {
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+
+      @media (max-width: 999px) {
+        display: none;
+      }
+    }
+
+    .order-mob-img {
+      width: 200.06px;
+      height: 249.03px;
+      position: absolute;
+      top: 389px;
+      right: 0;
+      z-index: 1;
+
+      @media (max-width: 399px) {
+        width: 150.06px;
+        height: 213.03px;
+        right: -28px;
+      }
+
+      @media (min-width: 999px) {
+        display: none;
+      }
+    }
+
+    .hero_public_order-red-shap {
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @media (max-width: 999px) {
+        display: none;
+      }
+    }
+    .order-bg-mob {
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      position: absolute;
+      top: 250px;
+      right: 0;
+
+      @media (max-width: 399px) {
+        right: -64px;
+      }
+
+      @media (min-width: 999px) {
+        display: none;
+      }
+    }
+
+    .hero-arrow {
+      width: 660px;
+      height: auto;
+      position: absolute;
+      bottom: 158px;
+      left: 492px;
+      z-index: 1;
+
+      @media (min-width: 1299px) and (max-width: 1399px) {
+        left: 402px;
+      }
+      @media (min-width: 1199px) and (max-width: 1299px) {
+        width: 637px;
+        bottom: 152px;
+        left: 335px;
+      }
+      @media (min-width: 1099px) and (max-width: 1199px) {
+        width: 638px;
+        bottom: 150px;
+        left: 217px;
+      }
+
+      @media (min-width: 999px) and (max-width: 1099px) {
+        width: 532px;
+        bottom: 189px;
+        left: 227px;
+        transform: rotate(-5deg);
+      }
+
+      @media (max-width: 999px) {
+        display: none;
+      }
+    }
+
+    .pickup-hero-text {
+      font-weight: 600;
+      font-size: 35.8333px;
+      line-height: 47px;
+      letter-spacing: 0.01em;
+      color: #cc3333;
+      margin: 0;
+
+      max-width: 424.57px;
+      height: auto;
+      position: absolute;
+      right: 47px;
+      bottom: 56.53px;
+
+      @media (max-width: 999px) {
+        max-width: 800px;
+
+        left: 60px;
+        top: 245px;
+        bottom: auto;
+
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.01em;
       }
     }
   }

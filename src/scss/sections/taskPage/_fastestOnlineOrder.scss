@@ -8,39 +8,40 @@
     padding: 0;
   }
 
+  @media (min-width: 1118px) and (max-width: 1170px) {
+    margin: 180px auto 88px;
+  }
+  @media (min-width: 1043px) and (max-width: 1118px) {
+    margin: 90px auto 88px;
+  }
+  @media (min-width: 999px) and (max-width: 1043px) {
+    margin: 10px auto 88px;
+  }
+
   .fastestOnlineOrder_section {
     width: 100%;
     min-height: 520px;
-    padding: 53px 81px 53px 113px;
+    padding: 105px 105px 105px 122px;
     border-radius: 40px;
     display: flex;
     align-items: center;
-    gap: 152.36px;
-    background-color: #66ccd1;
-    border-radius: 200px;
+    gap: 96px;
+    background: #95e1e5;
+    border-radius: 20px;
 
     @media (max-width: 768px) {
-      width: 100%;
-      min-height: 539.58px;
-      background-image: url("../images/pickup/online-order-bg-mobile-img.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-
-      background-color: inherit;
-      border-radius: 0;
-
-      padding: 68px 16px 150px;
+      gap: 20px;
+      padding: 80px 16px;
     }
 
     @media (max-width: 992px) {
       flex-direction: column;
-      gap: 50px;
-      text-align: center;
+      justify-content: center;
+      border-radius: 0;
     }
 
-    @media (min-width: 992px) and (max-width: 1199px) {
-      padding: 53px 50px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      padding: 105px 48px;
       gap: 50px;
     }
 
@@ -52,19 +53,28 @@
     .fastestOnlineOrder_contant {
       @media (max-width: 999px) {
         margin-left: 0;
+        text-align: center;
       }
 
       .contant_about {
         font-weight: 700;
         font-size: 40px;
         line-height: 60px;
-        color: var(--white);
+        color: #cc3332;
         margin-bottom: 40px;
 
         @media (max-width: 768px) {
           font-size: 20px;
           line-height: 28px;
           margin-bottom: 32px;
+        }
+      }
+
+      a {
+        button {
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
         }
       }
     }
